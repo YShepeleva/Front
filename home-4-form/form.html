@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<form action="#" method="get">
+			<fieldset>
+				<legend>Регистрация</legend>
+				<p>
+					<label>
+						<span>Ваше імʼя*</span>
+						<input type="text" name="name" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Teлефон*</span>
+						<input type="tel" name="phone" value="+38" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>E-mail*</span>
+						<input type="text" name="email" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Пароль*</span>
+						<input type="password" name="password" required>
+					</label>
+				</p>
+			</fieldset>
+			<!-- <label for="pass">Пароль</label>
+		<input type="password" id="pass"> інший способ  -->
+			<fieldset>
+				<legend>Підбір рейсу</legend>
+				<p>
+					<label>
+						<span>Звідки:</span>
+						<select name="city_1">
+							<option value="ukraine" disabled>Україна</option>
+							<option value="ukraine_kyiv">Київ</option>
+							<option value="ukraine_lviv">Львів</option>
+							<option value="ukraine_odesa">Одеса</option>
+							<option value="poland" disabled>Польша</option>
+							<option value="poland_warsaw">Варшава</option>
+							<option value="poland_krakiw">Краків</option>
+							<option value="poland_sopot">Сопот</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Куди:</span>
+						<select name="city_2">
+							<option value="ukraine" disabled>Україна</option>
+							<option value="ukraine_kyiv">Київ</option>
+							<option value="ukraine_lviv">Львів</option>
+							<option value="ukraine_odesa">Одеса</option>
+							<option value="poland" disabled>Польша</option>
+							<option value="poland_warsaw">Варшава</option>
+							<option value="poland_krakiw">Краків</option>
+							<option value="poland_sopot">Сопот</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Туди:</span>
+						<input type="date" name="date_1">
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Назад:</span>
+						<input type="date" name="date_1">
+					</label>
+				</p>
+				<p>
+					<label>
+						<span>Кількість квитків</span>
+						<input type="number" name="tikets" value="1">
+					</label>
+				</p>
+				<h2>Діти</h2>
+				<p>
+					<label>
+						<input type="radio" name="children" value="no_children" checked>
+						<span>Без дітей</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="children" value="child">
+						<span>Одна дитина</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="children" value="two_children">
+						<span>Дві дитини</span>
+					</label>
+				</p>
+				<h3>Комфорт</h3>
+				<p>
+					<label>
+						<input type="checkbox" name="legs">
+						<span>Більше місця для ніг</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="meal" checked>
+						<span>Харчування</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="bag">
+						<span>Більше місця для багажа</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="place_window">
+						<span>Місце біля вікна</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="first_row">
+						<span>Місце в першому ряді</span>
+					</label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>інформація по страхуванню</legend>
+				<p>
+					<label>
+						<input type="checkbox" name="strachovka" checked>
+						<span>Мені потрібне страхування</span>
+					</label>
+				</p>
+				<p>
+					<span>Завантажте копію паспорту</span>
+					<input type="file" name="doc">
+				</p>
+				<p>
+					<textarea placeholder="Додаткова інформація"></textarea>
+				</p>
+			</fieldset>
+			<button type="submit">Відправити</button>
+			<button type="reset">Очистити</button>
+		</form>
+	</div>
+</body>
+
+</html>
