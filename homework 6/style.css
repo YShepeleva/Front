@@ -1,3 +1,58 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./font/CeraPro-Light.woff2');
+    src: local('Cera Pro Light'), local('CeraPro-Light'),
+        url('CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('CeraPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./font/CeraPro-Medium.woff2');
+    src: local('Cera Pro Medium'), local('CeraPro-Medium'),
+        url('CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CeraPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./font/CeraPro-Black.woff2');
+    src: local('Cera Pro Black'), local('CeraPro-Black'),
+        url('CeraPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./font/CeraPro-Bold.woff2');
+    src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+        url('CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./font/CeraPro-Regular.woff2');
+    src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+        url('CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CeraPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +72,7 @@
 }
 
 .body {
-    font-family: 'Cera Pro', sans-serif;
+    font-family: 'Cera Pro', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 16px;
     height: auto;
@@ -40,7 +95,6 @@
 
 .navbar-menu {
     list-style-type: none;
-    font-family: 'Cera Pro', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,58 +134,86 @@
     width: 100%;
 }
 
-.btn_login span {
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.btn_container {
+.btn-container {
     height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btn_container .button_svg {
+.btn-container .button-svg {
     border: none;
     background-color: transparent;
-    padding: 0 15px;
+    margin: 0 15px;
+    display: inline-block;
 }
 
-.button_svg .nav-icon {
+.button-svg .nav-icon {
     transition: filter 0.6s ease;
     cursor: pointer;
 }
 
-.button_svg:hover .nav-icon {
+.button-svg:hover .nav-icon {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     fill: black;
 }
 
-.btn_login {
-    height: 35px;
-    width: 100px;
+.basket-icon{
+    position: relative;
+}
+
+.basket-count{
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    outline: #FFFFFF solid 2px;
+    background-color: #46A358;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    right: -5px;
+}
+
+.btn-login {
+    padding: 9px 18px;
     border: none;
     border-radius: 6px;
     background-color: #46A358;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.first_view {
+.btn-login span{
+    font-size: 16px;
+    padding-left: 5px;
+    font-family: 'Cera Pro', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.first-view {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 0 60px 40px;
-    border-radius: 5px;
-    box-shadow: 0px 10px 20px rgba(245, 245, 245, 0.5);
+    padding-left: 43px;
+    margin: 12px 0 12px 0;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 }
 
-.welcome_text {
+.welcome-text {
     max-width: 580px;
+    padding: 68px 0 85px 0;
 }
 
-.welcome_text h2 {
+.welcome-text h2 {
     color: #3D3D3D;
     font-weight: 500;
     margin-bottom: 7px;
@@ -141,7 +223,7 @@
     text-transform: uppercase;
 }
 
-.welcome_text h1 {
+.welcome-text h1 {
     font-size: 70px;
     font-weight: 900;
     line-height: 70px;
@@ -149,36 +231,35 @@
     color: #3D3D3D;
 }
 
-.welcome_text h1 span {
+.welcome-text h1 span {
     color: #46A358;
 }
 
-.welcome_text p {
-    font-family: 'Cera Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+.welcome-text p {
+    font-size: 15px;
     color: #727272;
     line-height: 24px;
     margin-bottom: 32px;
     margin-top: 5px;
 }
 
-.welcome_text a {
+.btn-shop-now {
     background-color: #46A358;
-    color: #fff;
-    padding: 14px 32px;
+    color: #FFFFFF;
+    padding: 12px 27px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
+    text-transform: uppercase;
     transition: filter 0.3s ease;
 }
 
-.welcome_text a:hover {
+.btn-shop-now:hover {
     background-color: #388e3c;
 }
 
-.welcome_figure img {
+.welcome-figure img {
     max-width: 487px;
     width: 100%;
 }
@@ -186,7 +267,7 @@
 .choose-plants {
     display: flex;
     justify-content: space-between;
-    padding-top: 46px;
+    margin: 34px 0 34px 0;
 }
 
 .container-for-selection {
@@ -195,11 +276,8 @@
 }
 
 .content-selection {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 0 22px 0 17px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    background-color: #FBFBFB;
+    padding: 14px 22px 0 16px;
 }
 
 .headline-categories {
@@ -231,7 +309,7 @@
     color: #46A358;
 }
 
-.block-price_range {
+.block-price-range {
     display: flex;
     flex-direction: column;
 }
@@ -244,18 +322,18 @@
     width: 80%;
 }
 
-.avarage_price {
+.avarage-price {
     font-weight: 400;
     font-size: 15px;
     padding: 15px 0;
 }
 
-.avarage_price span {
+.avarage-price span {
     font-weight: 700;
     color: #46A358;
 }
 
-.btn_filer_click {
+.btn-filer-click {
     background-color: #46A358;
     border: none;
     border-radius: 6px;
@@ -263,7 +341,7 @@
     height: 35px;
 }
 
-.btn_filer_click span {
+.btn-filer-click span {
     font-weight: 700;
     font-size: 16px;
     color: #fff;
@@ -317,7 +395,7 @@
     position: absolute;
 }
 
-.banner_sale img {
+.banner-sale img {
     max-width: 285px;
     width: 100%;
 }
@@ -331,17 +409,23 @@
 .filters {
     display: flex;
     justify-content: space-between;
-
+    padding-bottom: 39px;  
+    
 }
 
-.btn_filters {
+.btn-filters {
     border: none;
     background-color: transparent;
     font-weight: 400;
     font-size: 15px;
     line-height: 16px;
-    padding-bottom: 39px;
+    color: #3D3D3D;
     cursor: pointer;
+}
+
+.start {
+    display: flex;
+    justify-content: start; 
     flex-grow: 1;
 }
 
@@ -375,6 +459,12 @@
     flex-grow: 6;
     font-size: 15px;
     line-height: 16px;
+    padding-right: 8px;
+}
+
+.arrow{
+    display: flex;
+    flex-grow: 0;
 }
 
 .container-for-plants {
@@ -384,14 +474,17 @@
 }
 
 .goods-item {
-    width: 33%;
+    width: 33.333%;
     padding: 0 10px 70px;
     display: block;
     text-decoration: none;
+}
+
+.goods-item-inset{
     position: relative;
 }
 
-.goods-item::after {
+.goods-item-inset::after {
     position: absolute;
     left: 0;
     width: 0%;
@@ -402,13 +495,8 @@
     transition: width 0.3s ease;
 }
 
-.goods-item:hover::after {
+.goods-item-inset:hover::after {
     width: 100%;
-}
-
-.goods-item-inset {
-    height: 350px;
-    padding: 2px;
 }
 
 .goods-item-pic {
@@ -416,19 +504,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #FBFBFB;
 }
 
 .goods-item-inset h3 {
+    padding: 12px 0 5px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
+    color: #3D3D3D;
 }
 
 .goods-item-inset p {
     font-size: 18px;
     color: #46A358;
     font-weight: 700;
-    padding-top: 6px;
 }
 
 .goods-item-inset .sale {
@@ -440,32 +530,83 @@
     padding-left: 17px;
 }
 
-.pagination {
-    display: flex;
-    justify-content: end;
-    gap: 8px;
+.discount{
+    padding: 8px;
+    background-color: #46A358;
+    color: #fff;
+    font-size: 16px;
+    top: 14px;
+    left: 0; 
+    position: absolute;
+    text-transform: uppercase;
 }
 
-.pagination button {
-    width: 32px;
-    height: 32px;
+.btn-goods-item{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.goods-item:hover .btn-goods-item {
+    opacity: 1;
+}
+
+.hvr-icon{
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.icon{
+    transition: color 0.2s;
+    color: #3D3D3D;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color:#46A358;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 56px 0 100px 0;
+}
+
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
     border: 1px solid #E5E5E5;
-    background: transparent;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    font-family: 'Cera Pro', sans-serif;
+    text-decoration: none;
     color: #3D3D3D;
     transition: background 0.3s, color 0.3s;
 }
 
-.pagination button.active {
+.pagination a.active {
     background: #4caf50;
     color: white;
     border: none;
 }
 
-.pagination button:hover {
+.pagination a:hover {
     background: #ddd;
 }
