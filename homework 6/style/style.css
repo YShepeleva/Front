@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cera Pro';
-    src: url('./font/CeraPro-Light.woff2');
+    src: url('../font/CeraPro-Light.woff2');
     src: local('Cera Pro Light'), local('CeraPro-Light'),
         url('CeraPro-Light.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Light.woff2') format('woff2');
@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('./font/CeraPro-Medium.woff2');
+    src: url('../font/CeraPro-Medium.woff2');
     src: local('Cera Pro Medium'), local('CeraPro-Medium'),
         url('CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Medium.woff2') format('woff2');
@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('./font/CeraPro-Black.woff2');
+    src: url('../font/CeraPro-Black.woff2');
     src: local('Cera Pro Black'), local('CeraPro-Black'),
         url('CeraPro-Black.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Black.woff2') format('woff2');
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('./font/CeraPro-Bold.woff2');
+    src: url('../font/CeraPro-Bold.woff2');
     src: local('Cera Pro Bold'), local('CeraPro-Bold'),
         url('CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Bold.woff2') format('woff2');
@@ -44,7 +44,7 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('./font/CeraPro-Regular.woff2');
+    src: url('../font/CeraPro-Regular.woff2');
     src: local('Cera Pro Regular'), local('CeraPro-Regular'),
         url('CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
         url('CeraPro-Regular.woff2') format('woff2');
@@ -99,13 +99,13 @@
     align-items: center;
 }
 
-.navbar-menu > li {
+.navbar-menu>li {
     display: block;
     padding: 0 25px;
     position: relative;
 }
 
-.navbar-menu > li > a {
+.navbar-menu>li>a {
     color: black;
     opacity: 0.7;
     font-size: 16px;
@@ -114,12 +114,12 @@
     position: relative;
 }
 
-.navbar-menu > li:hover > a {
+.navbar-menu>li:hover>a {
     opacity: 1;
     text-shadow: 0 4px 10px rgba(0, 0, 0, .1);
 }
 
-.navbar-menu > li > a::after {
+.navbar-menu>li>a::after {
     position: absolute;
     left: 0;
     width: 0%;
@@ -130,7 +130,7 @@
     transition: width 0.3s ease;
 }
 
-.navbar-menu > li > a:hover::after {
+.navbar-menu>li>a:hover::after {
     width: 100%;
 }
 
@@ -145,7 +145,7 @@
     width: 188px;
 }
 
-.pop-up-window::before{
+.pop-up-window::before {
     content: '';
     width: 100%;
     height: 45px;
@@ -156,13 +156,13 @@
     top: -40px;
 }
 
-.pop-up-window > li{
+.pop-up-window>li {
     padding: 7px 14px;
     display: flex;
     align-items: center;
 }
 
-.pop-up-window > li > a{
+.pop-up-window>li>a {
     display: block;
     font-size: 16px;
     line-height: 100%;
@@ -171,28 +171,28 @@
     color: inherit;
 }
 
-.pop-up-window > li:hover{
+.pop-up-window>li:hover {
     background-color: #1A712A;
     color: #FFFFFF;
     font-weight: 700;
 }
 
-.navbar-menu > li:hover .pop-up-window{
+.navbar-menu>li:hover .pop-up-window {
     display: block;
 }
 
-.arrow-right{
-   display: block;
-   margin-left: 89px;
-   color: #3D3D3D;
+.arrow-right {
+    display: block;
+    margin-left: 89px;
+    color: #3D3D3D;
 }
 
-.pop-up-window > li:hover .arrow-right{
+.pop-up-window>li:hover .arrow-right {
     transform: rotate(180deg);
     color: #FFFFFF;
 }
 
-.pop-up-window-next{
+.pop-up-window-next {
     display: none;
     background-color: #EDF6EE;
     padding: 0;
@@ -203,11 +203,11 @@
     width: 178px;
 }
 
-.pop-up-window-next > li{
+.pop-up-window-next>li {
     padding: 7px 14px;
 }
 
-.pop-up-window-next > li > a{
+.pop-up-window-next>li>a {
     display: block;
     font-size: 16px;
     line-height: 100%;
@@ -217,15 +217,15 @@
     font-weight: 400;
 }
 
-.pop-up-window > li:hover .pop-up-window-next{
+.pop-up-window>li:hover .pop-up-window-next {
     display: block;
 }
 
-.pop-up-window-next > li:hover{
+.pop-up-window-next>li:hover {
     background-color: #1A712A;
 }
 
-.pop-up-window-next a:hover{
+.pop-up-window-next a:hover {
     color: #FFFFFF;
     font-weight: 700;
 }
@@ -254,11 +254,11 @@
     fill: black;
 }
 
-.basket-icon{
+.basket-icon {
     position: relative;
 }
 
-.basket-count{
+.basket-count {
     font-size: 10px;
     color: #FFFFFF;
     font-weight: 500;
@@ -286,7 +286,7 @@
     text-align: center;
 }
 
-.btn-login span{
+.btn-login span {
     font-size: 16px;
     padding-left: 5px;
     font-family: 'Cera Pro', sans-serif;
@@ -505,8 +505,8 @@
 .filters {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 39px;  
-    
+    padding-bottom: 39px;
+
 }
 
 .btn-filters {
@@ -521,7 +521,7 @@
 
 .start {
     display: flex;
-    justify-content: start; 
+    justify-content: start;
     flex-grow: 1;
 }
 
@@ -558,7 +558,7 @@
     padding-right: 8px;
 }
 
-.arrow{
+.arrow {
     display: flex;
     flex-grow: 0;
 }
@@ -576,7 +576,7 @@
     text-decoration: none;
 }
 
-.goods-item-inset{
+.goods-item-inset {
     position: relative;
 }
 
@@ -626,18 +626,18 @@
     padding-left: 17px;
 }
 
-.discount{
+.discount {
     padding: 8px;
     background-color: #46A358;
     color: #fff;
     font-size: 16px;
     top: 14px;
-    left: 0; 
+    left: 0;
     position: absolute;
     text-transform: uppercase;
 }
 
-.btn-goods-item{
+.btn-goods-item {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -652,7 +652,7 @@
     opacity: 1;
 }
 
-.hvr-icon{
+.hvr-icon {
     background: #FFFFFF;
     border-radius: 4px;
     border: none;
@@ -664,14 +664,14 @@
     margin: 7px;
 }
 
-.icon{
+.icon {
     transition: color 0.2s;
     color: #3D3D3D;
     cursor: pointer;
 }
 
-.icon:hover{
-    color:#46A358;
+.icon:hover {
+    color: #46A358;
 }
 
 .pagination {
