@@ -80,8 +80,7 @@
 }
 
 .header {
-    width: 100%;
-    /* height: 50px; */
+    /* width: 100%; */
 }
 
 .navbar {
@@ -100,12 +99,13 @@
     align-items: center;
 }
 
-.navbar-menu li {
+.navbar-menu > li {
     display: block;
     padding: 0 25px;
+    position: relative;
 }
 
-.navbar-menu li a {
+.navbar-menu > li > a {
     color: black;
     opacity: 0.7;
     font-size: 16px;
@@ -114,24 +114,120 @@
     position: relative;
 }
 
-.navbar-menu li a:hover {
+.navbar-menu > li:hover > a {
     opacity: 1;
     text-shadow: 0 4px 10px rgba(0, 0, 0, .1);
 }
 
-.navbar-menu li a::after {
+.navbar-menu > li > a::after {
     position: absolute;
     left: 0;
     width: 0%;
-    bottom: -25px;
+    bottom: -26px;
     height: 3px;
     background-color: #46A358;
     content: '';
     transition: width 0.3s ease;
 }
 
-.navbar-menu li a:hover::after {
+.navbar-menu > li > a:hover::after {
     width: 100%;
+}
+
+.pop-up-window {
+    display: none;
+    background-color: #EDF6EE;
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    top: 55px;
+    left: 25px;
+    width: 188px;
+}
+
+.pop-up-window::before{
+    content: '';
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.pop-up-window > li{
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.pop-up-window > li > a{
+    display: block;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    line-height: 100%;
+    color: inherit;
+}
+
+.pop-up-window > li:hover{
+    background-color: #1A712A;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.navbar-menu > li:hover .pop-up-window{
+    display: block;
+}
+
+.arrow-right{
+   display: block;
+   margin-left: 89px;
+   color: #3D3D3D;
+}
+
+.pop-up-window > li:hover .arrow-right{
+    transform: rotate(180deg);
+    color: #FFFFFF;
+}
+
+.pop-up-window-next{
+    display: none;
+    background-color: #EDF6EE;
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    top: 0;
+    right: -180px;
+    width: 178px;
+}
+
+.pop-up-window-next > li{
+    padding: 7px 14px;
+}
+
+.pop-up-window-next > li > a{
+    display: block;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    line-height: 100%;
+    color: #3D3D3D;
+    font-weight: 400;
+}
+
+.pop-up-window > li:hover .pop-up-window-next{
+    display: block;
+}
+
+.pop-up-window-next > li:hover{
+    background-color: #1A712A;
+}
+
+.pop-up-window-next a:hover{
+    color: #FFFFFF;
+    font-weight: 700;
 }
 
 .btn-container {

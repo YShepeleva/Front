@@ -5,22 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenshop</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body class="body">
     <div class="wrapper">
         <header>
             <nav class="navbar">
-                <a href="http://"><img src="image/Logo.svg"></a>
+                <a href="http://"><img src="./image/logo.svg"></a>
                 <ul class="navbar-menu">
                     <li><a href="http://">Home</a></li>
                     <li><a href="http://">Shop</a></li>
-                    <li><a href="http://">Plant Care</a></li>
+                    <li><a href="http://">Plant Care</a>
+                        <ul class="pop-up-window">
+                            <li><a href="">Drainage</a></li>
+                            <li><a href="">Fungicides</a></li>
+                            <li><a href="">Fertilizer</a></li>
+                            <li><a href="">Priming</a>
+                                <svg class="arrow-right" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.14228 0.945805C0.909014 0.730097 0.908201 0.379612 1.14046 0.162973C1.35161 -0.0339699 1.68269 -0.0524979 1.9164 0.107825L1.98337 0.161288L6.79132 4.60737C7.00401 4.80406 7.02336 5.11265 6.84935 5.32969L6.79135 5.39186L1.9834 9.83868C1.75016 10.0544 1.37278 10.0537 1.1405 9.83706C0.929333 9.64013 0.910782 9.33257 1.08439 9.1162L1.14224 9.05423L5.52584 4.99941L1.14228 0.945805Z" fill="currentColor"/>
+                                    </svg>   
+                                <ul class="pop-up-window-next">
+                                    <li><a href="">Universal</a></li>
+                                    <li><a href="">For Ficus</a></li>
+                                    <li><a href="">For Cacti</a></li>
+                                    <li><a href="">For Citrus</a></li>
+                                    <li><a href="">For those in bloom</a></li>
+                                    <li><a href="">For Orchids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="http://">Blogs</a></li>
                 </ul>
                 <div class="btn-container">
-                    <button class="button-svg">
+                    <button class="button-svg" type="button">
                         <svg class="nav-icon search_icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -37,7 +56,7 @@
                         </svg>
                         <span class="basket-count">6</span>
                     </a>
-                    <button class="btn-login">
+                    <button class="btn-login" type="button">
                         <svg class="icon-logout" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.1601 10.1006H8.12598" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -63,7 +82,7 @@
                     <a class="btn-shop-now" href="">Shop now</a>
                 </article>
                 <div class="welcome-figure">
-                    <img class="img-responsive" src="image/plant_pot.png" alt="small flowers in a pot">
+                    <img class="img-responsive" src="./image/plant_pot.png" alt="small flowers in a pot">
                 </div>
             </section>
             <section class="choose-plants">
@@ -86,7 +105,7 @@
                         <div class="block-price-range">
                             <h5 class="headline-categories">Price Range</h5>
                             <div class="container-price">
-                                <img src="image/range_of_price.svg" alt="">
+                                <img src="./image/range_of_price.svg" alt="">
                                 <p class="avarage-price">Price: <span>$39 - $1230</span></p>
                                 <button class="btn-filer-click"><span>Filter</span></button>
                             </div>
@@ -118,27 +137,27 @@
                             </ul>
                         </div>
                     </div>
-                    <aside class="banner-sale"><img src="image/super_sale_banner.jpg" alt="banner_sale_75"></aside>
+                    <aside class="banner-sale"><img src="./image/super_sale_banner.jpg" alt="banner_sale_75"></aside>
                 </div>
                 <div class="all-plants">
                     <div class="filters">
-                        <button class="btn-filters start"><span>All Plants</span></button>
-                        <button class="btn-filters start"><span>New Arrivals</span></button>
-                        <button class="btn-filters start"><span>Sale</span></button>
+                        <button class="btn-filters start" type="button"><span>All Plants</span></button>
+                        <button class="btn-filters start" type="button"><span>New Arrivals</span></button>
+                        <button class="btn-filters start" type="button"><span>Sale</span></button>
                         <p>Sort by:</p>
-                        <button class="btn-filters arrow"><span>Default sorting</span> <img src="image/arrow-down.svg"
+                        <button class="btn-filters arrow" type="button"><span>Default sorting</span> <img src="image/arrow-down.svg"
                                 alt="arrow-down"></button>
                     </div>
                     <div class="container-for-plants">
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_1.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_1.jpg" alt="">
                                 </div>
                                 <h3>Barberton Daisy</h3>
                                 <p>$119.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -146,7 +165,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -154,7 +173,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -168,12 +187,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_2.png" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_2.jpg" alt="">
                                 </div>
                                 <h3>Angel Wing Begonia</h3>
                                 <p>$169.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -181,7 +200,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -189,7 +208,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -203,13 +222,13 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_3.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_3.jpg" alt="">
                                 </div>
                                 <h3>African Violet</h3>
                                 <p>$199.00 <span class="sale">$229.00</span></p>
                                 <span class="discount">13% off</span>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -217,7 +236,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -225,7 +244,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -239,12 +258,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_4.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_4.jpg" alt="">
                                 </div>
                                 <h3>Beach Spider Lily</h3>
                                 <p>$129.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -252,7 +271,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -260,7 +279,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -274,12 +293,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_5.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_5.jpg" alt="">
                                 </div>
                                 <h3>Blushing Bromeliad</h3>
                                 <p>$139.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -287,7 +306,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -295,7 +314,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -309,12 +328,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_6.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_6.jpg" alt="">
                                 </div>
                                 <h3>Aluminum Plant</h3>
                                 <p>$179.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -322,7 +341,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -330,7 +349,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -344,12 +363,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_7.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_7.jpg" alt="">
                                 </div>
                                 <h3>Bird's Nest Fern</h3>
                                 <p>$99.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -357,7 +376,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -365,7 +384,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -379,12 +398,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_8.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_8.jpg" alt="">
                                 </div>
                                 <h3>Broadleaf Lady Palm</h3>
                                 <p>$59.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -392,7 +411,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -400,7 +419,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -414,12 +433,12 @@
                         <a class="goods-item" href="">
                             <div class="goods-item-inset">
                                 <div class="goods-item-pic">
-                                    <img class="img-responsive" src="image/fish/product_9.jpg" alt="">
+                                    <img class="img-responsive" src="./image/fish/product_9.jpg" alt="">
                                 </div>
                                 <h3>Chinese Evergreen</h3>
                                 <p>$39.00</p>
                                 <div class="btn-goods-item">
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button"> 
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -427,7 +446,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="18" viewBox="0 0 20 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -435,7 +454,7 @@
                                                 fill="currentcolor" />
                                         </svg>
                                     </button>
-                                    <button class="hvr-icon">
+                                    <button class="hvr-icon" type="button">
                                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
