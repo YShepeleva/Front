@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenshop</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/svg-style.css">
 </head>
 
 <body class="body">
     <div class="wrapper">
         <header>
             <nav class="navbar">
-                <a href="http://"><img src="./image/logo.svg"></a>
+                <a href="http://"><img class="main-logo" src="./image/logo.svg"></a>
                 <ul class="navbar-menu">
                     <li><a href="http://">Home</a></li>
                     <li><a href="http://">Shop</a></li>
@@ -47,7 +48,7 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828089 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59653 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9777 19.2046C19.8165 19.9651 18.9108 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98262 2.00065C5.12292 1.99503 2.00781 5.09067 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9506 12.8504 15.9605 8.98677Z"
-                                fill="#3D3D3D" />
+                                fill="currentColor" />
                         </svg>
                     </button>
                     <a class="button-svg basket-icon" href="">
@@ -55,7 +56,7 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975776 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74066 3.63167C4.91293 3.82466 6.30201 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65282 6.94993 5.90513 6.64234ZM9.42288 22.8281C9.42288 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42288 23.4753 9.42288 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
-                                fill="#3D3D3D" />
+                                fill="currentColor" />
                         </svg>
                         <span class="basket-count">6</span>
                     </a>
@@ -79,7 +80,7 @@
             <section class="first-view">
                 <article class="welcome-text">
                     <h2>Welcome to Greenshop</h2>
-                    <h1>Let's make a better <span>planet</span></h1>
+                    <h1><b>Let's make a better <span>planet</span></b></h1>
                     <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
                         create an unique Urban Jungle. Order your favorite plants!</p>
                     <a class="btn-shop-now" href="">Shop now</a>
@@ -110,7 +111,7 @@
                             <div class="container-price">
                                 <img src="./image/range_of_price.svg" alt="">
                                 <p class="avarage-price">Price: <span>$39 - $1230</span></p>
-                                <button class="btn-filer-click"><span>Filter</span></button>
+                                <button class="btn-filer-click" type="button"><span>Filter</span></button>
                             </div>
                         </div>
                         <div class="block-size-of-plants">
@@ -118,22 +119,25 @@
                             <ul>
                                 <li>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="size" value="small-size-of-plants" checked>
-                                        Small
+                                        <input type="checkbox" name="size" value="small-size-of-plants"
+                                            class="checkbox-input visually-hidden" checked>
+                                        <span class="checkbox-text">Small</span>
                                     </label>
                                     <span class="count">(119)</span>
                                 </li>
                                 <li>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="size" value="medium-size-of-plants">
-                                        Medium
+                                        <input type="checkbox" name="size" value="medium-size-of-plants"
+                                            class="checkbox-input visually-hidden">
+                                        <span class="checkbox-text">Medium</span>
                                     </label>
                                     <span class="count">(86)</span>
                                 </li>
                                 <li>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="size" value="large-size-of-plants">
-                                        Large
+                                        <input type="checkbox" name="size" value="large-size-of-plants"
+                                            class="checkbox-input visually-hidden">
+                                        <span class="checkbox-text">Large</span>
                                     </label>
                                     <span class="count">(78)</span>
                                 </li>
@@ -147,9 +151,11 @@
                         <button class="btn-filters start" type="button"><span>All Plants</span></button>
                         <button class="btn-filters start" type="button"><span>New Arrivals</span></button>
                         <button class="btn-filters start" type="button"><span>Sale</span></button>
-                        <p>Sort by:</p>
-                        <button class="btn-filters arrow" type="button"><span>Default sorting</span> <img
-                                src="image/arrow-down.svg" alt="arrow-down"></button>
+                        <div class="btn-sort-by">
+                            <p>Sort by:</p>
+                            <button class="btn-filters arrow" type="button"><span>Default sorting</span>
+                                <img src="image/arrow-down.svg" alt="arrow-down"></button>
+                        </div>
                     </div>
                     <div class="container-for-plants">
                         <a class="goods-item" href="">
@@ -479,7 +485,233 @@
                 <a href="">4</a>
                 <a href="">&gt;</a>
             </section>
-        </main>
+            <section class="section-trands-plants">
+                <article class="content-trands-plants">
+                    <div class="img-trands-plants-inset">
+                        <img class="img-responsive" src="./image/section-3-1.png">
+                    </div>
+                    <div class="container-trands">
+                        <h2 class="headline-trands">Summer cactus <br> & succulents</h2>
+                        <p class="text-trands">We are an online plant shop offering a wide range of cheap and trendy
+                            plants</p>
+                        <a class="btn-find-more" href="">
+                            <span class="text-find-more">Find More</span>
+                        </a>
+                    </div>
+                </article>
+                <article class="content-trands-plants">
+                    <div class="img-trands-plants-inset">
+                        <img class="img-responsive" src="./image/section-3-2.png">
+                    </div>
+                    <div class="container-trands">
+                        <h2 class="headline-trands">Styling Trends <br> & much more</h2>
+                        <p class="text-trands">We are an online plant shop offering a wide range of cheap and trendy
+                            plants</p>
+                        <a class="btn-find-more" href="">
+                            <span class="text-find-more">Find More</span>
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <section class="section-blog-posts">
+                <h2 class="headline-blog-posts">&nbsp;Our Blog Posts</h2>
+                <p class="text-blog-posts">We are an online plant shop offering a wide range of cheap and trendy plants.
+                </p>
+                <div class="content-blog-posts">
+                    <article class="box-blog-posts">
+                        <div class="image-blog-inset">
+                            <img class="img-responsive" src="./image/post-01.jpg">
+                        </div>
+                        <div class="container-for-posts">
+                            <p class="parag-month">September 12 &nbsp;I Read in 6 minutes</p>
+                            <h3 class="headline-post">Cactus & Succulent Care Tips</h3>
+                            <p class="parag-content">Cacti are succulents are easy care plants for any home or patio.
+                            </p>
+                            <a class="read-more-post" href="">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="box-blog-posts">
+                        <div class="image-blog-inset">
+                            <img class="img-responsive" src="./image/post-02.jpg">
+                        </div>
+                        <div class="container-for-posts">
+                            <p class="parag-month">September 12 &nbsp;I Read in 6 minutes</p>
+                            <h3 class="headline-post">Cactus & Succulent Care Tips</h3>
+                            <p class="parag-content">Cacti are succulents are easy care plants for any home or patio.
+                            </p>
+                            <a class="read-more-post" href="">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="box-blog-posts">
+                        <div class="image-blog-inset">
+                            <img class="img-responsive" src="./image/post-03.jpg">
+                        </div>
+                        <div class="container-for-posts">
+                            <p class="parag-month">September 12 &nbsp;I Read in 6 minutes</p>
+                            <h3 class="headline-post">Cactus & Succulent Care Tips</h3>
+                            <p class="parag-content">Cacti are succulents are easy care plants for any home or patio.
+                            </p>
+                            <a class="read-more-post" href="">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="box-blog-posts">
+                        <div class="image-blog-inset">
+                            <img class="img-responsive" src="./image/post-04.jpg">
+                        </div>
+                        <div class="container-for-posts">
+                            <p class="parag-month">September 12 &nbsp;I Read in 6 minutes</p>
+                            <h3 class="headline-post">Cactus & Succulent Care Tips</h3>
+                            <p class="parag-content">Cacti are succulents are easy care plants for any home or patio.
+                            </p>
+                            <a class="read-more-post" href="">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section-newsletters">
+                <div class="newsletter-wrapper">
+                    <ul class="garden-care">
+                        <li class="card-garden-care">
+                            <img class="image-garden-care" src="./image/new-1.png" alt="garden-care">
+                            <h4>Garden Care</h4>
+                            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                        </li>
+                        <li class="card-garden-care">
+                            <img class="image-garden-care" src="./image/new-2.png" alt="plant-renovation">
+                            <h4>Plant Renovation</h4>
+                            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                        </li>
+                        <li class="card-garden-care">
+                            <img class="image-garden-care" src="./image/new-3.png" alt="watering-garden">
+                            <h4>Watering Garden</h4>
+                            <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                        </li>
+                    </ul>
+                    <div class="join-newsletters">
+                        <h3>Would you like to join newsletters?</h3>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="enter your email address..." required>
+                            <button type="submit">Join</button>
+                        </div>
+                        <p>We usually post offers and challenges in newsletter. We’re your online houseplant
+                            destination. We offer a wide range of houseplants and accessories shipped directly from our
+                            (green)house to yours! </p>
+                    </div>
+                </div>
+            </section>
+    </div>
+    <section class="section-navigation">
+        <div class="small-wrapper">
+            <a href="http://"><img class="main-logo" src="./image/logo.svg"></a>
+            <div class="contact-item">
+                <a href="https://maps.google.com/?q=70+West+Buckingham+Ave,+Farmingdale,+NY+11735" target="_blank">
+                    <img src="./image/location.svg" alt="location" class="icon-navigation">
+                    <span>70 West Buckingham Ave.<br>Farmingdale, NY 11735</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="mailto:contact@greenshop.com">
+                    <img src="./image/message.svg" alt="email" class="icon-navigation">
+                    <span>contact@greenshop.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="tel:+8801911717490">
+                    <img src="./image/calling.svg" alt="phone" class="icon-navigation">
+                    <span>+88 01911 717 490</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+    <div class="wrapper">
+        <footer class="footer">
+            <ul class="guide">
+                <li class="guide-sections">
+                    <h3 class="headline-guide">My Account</h3>
+                    <a href="">My Account</a>
+                    <a href="">Our stores</a>
+                    <a href="">Contact us</a>
+                    <a href="">Career</a>
+                    <a href="">Specials</a>
+                </li>
+                <li class="guide-sections">
+                    <h4 class="headline-guide">Help & Guide</h4>
+                    <a href="">Help Center</a>
+                    <a href="">How to Buy</a>
+                    <a href="">Shipping & Delivery</a>
+                    <a href="">Product Policy</a>
+                    <a href="">How to Return</a>
+                </li>
+                <li class="guide-sections">
+                    <h5 class="headline-guide">Categories</h5>
+                    <a href="">House Plants</a>
+                    <a href="">Potter Plants</a>
+                    <a href="">Seeds</a>
+                    <a href="">Small Plants</a>
+                    <a href="">Accessories</a>
+                </li>
+            </ul>
+            <div class="block-pay-and-media">
+                <div class="links-media">
+                    <h2>Social Media</h2>
+                    <div class="container-for-media-links">
+                        <a class="icon-media-footer" href="">
+                            <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 5.33333H0V8H2V16H5.33333V8H7.73333L8 5.33333H5.33333V4.2C5.33333 3.6 5.46667 3.33333 6.06667 3.33333H8V0H5.46667C3.06667 0 2 1.06667 2 3.06667V5.33333Z"
+                                    fill="#46A358" fill-opacity="0.6" />
+                            </svg>
+                        </a>
+                        <a class="icon-media-footer" href="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 1.46667C10.1333 1.46667 10.4 1.46667 11.2667 1.53333C13.4667 1.6 14.4667 2.66667 14.5333 4.8C14.6 5.66667 14.6 5.86667 14.6 8C14.6 10.1333 14.6 10.4 14.5333 11.2C14.4667 13.3333 13.4 14.4 11.2667 14.4667C10.4 14.5333 10.2 14.5333 8 14.5333C5.86667 14.5333 5.6 14.5333 4.8 14.4667C2.6 14.4 1.6 13.3333 1.53333 11.2C1.46667 10.3333 1.46667 10.1333 1.46667 8C1.46667 5.86667 1.46667 5.6 1.53333 4.8C1.6 2.66667 2.66667 1.6 4.8 1.53333C5.6 1.46667 5.86667 1.46667 8 1.46667ZM8 0C5.8 0 5.53333 0 4.73333 0.0666667C1.8 0.2 0.2 1.8 0.0666667 4.73333C0 5.53333 0 5.8 0 8C0 10.2 0 10.4667 0.0666667 11.2667C0.2 14.2 1.8 15.8 4.73333 15.9333C5.53333 16 5.8 16 8 16C10.2 16 10.4667 16 11.2667 15.9333C14.2 15.8 15.8 14.2 15.9333 11.2667C16 10.4667 16 10.2 16 8C16 5.8 16 5.53333 15.9333 4.73333C15.8 1.8 14.2 0.2 11.2667 0.0666667C10.4667 0 10.2 0 8 0ZM8 3.86667C5.73333 3.86667 3.86667 5.73333 3.86667 8C3.86667 10.2667 5.73333 12.1333 8 12.1333C10.2667 12.1333 12.1333 10.2667 12.1333 8C12.1333 5.73333 10.2667 3.86667 8 3.86667ZM8 10.6667C6.53333 10.6667 5.33333 9.46667 5.33333 8C5.33333 6.53333 6.53333 5.33333 8 5.33333C9.46667 5.33333 10.6667 6.53333 10.6667 8C10.6667 9.46667 9.46667 10.6667 8 10.6667ZM12.2667 2.8C11.7333 2.8 11.3333 3.2 11.3333 3.73333C11.3333 4.26667 11.7333 4.66667 12.2667 4.66667C12.8 4.66667 13.2 4.26667 13.2 3.73333C13.2 3.2 12.8 2.8 12.2667 2.8Z"
+                                    fill="#46A358" fill-opacity="0.6" />
+                            </svg>
+                        </a>
+                        <a class="icon-media-footer" href="">
+                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.03186 13.0036C11.0699 13.0036 14.3718 8.00118 14.3718 3.66357C14.3718 3.52144 14.3689 3.38005 14.3624 3.2392C15.0033 2.77588 15.5605 2.19756 16 1.53953C15.4118 1.80085 14.7789 1.97682 14.1149 2.05616C14.7926 1.64981 15.313 1.0067 15.5585 0.24021C14.9241 0.616357 14.2217 0.889688 13.4742 1.03709C12.8749 0.399076 12.0218 0 11.0779 0C9.26483 0 7.79464 1.4702 7.79464 3.28233C7.79464 3.54001 7.82357 3.79041 7.87962 4.0308C5.1516 3.89377 2.73239 2.58735 1.11352 0.601253C0.831273 1.08622 0.668767 1.64999 0.668767 2.25106C0.668767 3.38988 1.24837 4.3953 2.12968 4.98363C1.59121 4.96707 1.08531 4.81894 0.642926 4.57291C0.642198 4.58656 0.642198 4.60039 0.642198 4.61476C0.642198 6.2047 1.77392 7.53204 3.27578 7.83285C3.00008 7.90801 2.71001 7.94841 2.41047 7.94841C2.19901 7.94841 1.99338 7.9273 1.79339 7.88927C2.21121 9.19332 3.42318 10.1425 4.86007 10.1693C3.73636 11.0498 2.32094 11.5745 0.783049 11.5745C0.518272 11.5745 0.256952 11.5594 0 11.529C1.45273 12.46 3.17769 13.0036 5.03186 13.0036Z"
+                                    fill="#46A358" fill-opacity="0.6" />
+                            </svg>
+                        </a>
+                        <a class="icon-media-footer" href="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.33333 1.66667C3.33333 2.6 2.6 3.33333 1.66667 3.33333C0.733333 3.33333 0 2.6 0 1.66667C0 0.733333 0.733333 0 1.66667 0C2.6 0 3.33333 0.733333 3.33333 1.66667ZM3.33333 4.66667H0V15.3333H3.33333V4.66667ZM8.66667 4.66667H5.33333V15.3333H8.66667V9.73333C8.66667 6.6 12.6667 6.33333 12.6667 9.73333V15.3333H16V8.6C16 3.33333 10.0667 3.53333 8.66667 6.13333V4.66667Z"
+                                    fill="#46A358" fill-opacity="0.6" />
+                            </svg>
+                        </a>
+                        <a class="icon-media-footer" href="">
+                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.42188 0.174993C6.22176 -0.0583309 12.4443 -0.0583309 15.2441 0.174993L15.5205 0.20136C18.301 0.522962 18.666 2.34838 18.666 7.01972L18.6611 7.88886C18.6073 12.0678 18.0875 13.7175 15.2441 13.8635C12.7943 13.9996 7.72405 14.0163 4.61914 13.9143L3.42188 13.8635C0.578333 13.6447 0.0586839 12.0587 0.00488281 7.88788L0 7.01972C8.20319e-07 2.19781 0.388844 0.408376 3.42188 0.174993ZM14.3408 4.35663C11.7471 4.19554 6.91592 4.19547 4.32324 4.35663C4.32299 4.3592 4.32349 4.36186 4.32324 4.36445C4.26078 4.9972 4.23633 5.842 4.23633 7.01972C4.23633 8.18932 4.26073 9.03006 4.32227 9.66132C6.97053 9.7666 11.6955 9.76661 14.3438 9.66132C14.4047 9.02375 14.4297 8.18045 14.4297 7.01972C14.4297 5.842 14.4043 4.9972 14.3418 4.36445C14.3415 4.36183 14.3411 4.35923 14.3408 4.35663ZM7 7.01972C7 5.59043 8.50383 4.66079 9.78223 5.29999C11.1992 6.00859 11.1993 8.0309 9.78223 8.73945C8.50398 9.3784 7.00025 8.44874 7 7.01972Z"
+                                    fill="#46A358" fill-opacity="0.6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="pay-accept">
+                    <h6>We accept</h6>
+                    <img src="./image/pay-cards.jpg">
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
