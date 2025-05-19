@@ -1,0 +1,12 @@
+{
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "*.svg"
+    }
+  ],
+  "files.associations": {
+    "*.svg": "xml"
+  },
+  "liveServer.settings.port": 5501
+}
