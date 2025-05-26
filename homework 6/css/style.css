@@ -168,6 +168,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-menu>li {
@@ -352,7 +353,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-login {
-    padding: 8px 17px 7px;  
+    padding: 8px 17px 7px;
     text-decoration: none;
     margin-left: 20px;
     border: none;
@@ -360,7 +361,7 @@ input[type="radio"].visually-hidden {
     background-color: #46A358;
     cursor: pointer;
     display: inline-flex;
-    text-align: center;  
+    text-align: center;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
@@ -368,7 +369,7 @@ input[type="radio"].visually-hidden {
 
 .icon-logout use {
     stroke: currentColor;
-  }
+}
 
 .btn-login span {
     font-size: 16px;
@@ -377,6 +378,20 @@ input[type="radio"].visually-hidden {
 
 .btn-login:hover {
     background-color: #388e3c;
+}
+
+.navbar-menu-btn {
+    background-image: url(../image/hamburger.svg);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.navbar-menu-btn:active {
+    background-image: url(../image/close.svg);
 }
 
 .first-view {
@@ -440,14 +455,33 @@ input[type="radio"].visually-hidden {
     background-color: #388e3c;
 }
 
+.welcome-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .welcome-figure img {
-    max-width: 487px;
     width: 100%;
 }
 
 .choose-plants {
     display: flex;
     margin: 0 -10px;
+}
+
+.filtrs-menu-btn {
+    background-image: url(../image/fltrs-icon.svg);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.filtrs-menu-btn:active {
+    background-image: url(../image/close.svg);
 }
 
 .container-for-selection {
@@ -498,7 +532,7 @@ input[type="radio"].visually-hidden {
     padding: 15px 10px;
 }
 
-.slider-range{
+.slider-range {
     background-color: rgba(70, 163, 88, 1);
     border-radius: 2px;
     height: 4px;
@@ -508,7 +542,7 @@ input[type="radio"].visually-hidden {
     width: 86%;
 }
 
-.slider-line{
+.slider-line {
     background-color: #46A358;
     height: inherit;
     position: absolute;
@@ -516,7 +550,7 @@ input[type="radio"].visually-hidden {
     transform: translateY(-50%);
 }
 
-.slider-btn{
+.slider-btn {
     cursor: pointer;
     width: 21px;
     height: 21px;
@@ -552,6 +586,8 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+    font-family: inherit;
+    text-transform: uppercase;
 }
 
 .block-size-of-plants {
@@ -655,8 +691,9 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-sort-by {
-    padding-left: 375px;
+    padding-left: 359px;
     display: flex;
+    align-items: center;
 }
 
 .btn-sort-by p {
@@ -919,18 +956,20 @@ input[type="radio"].visually-hidden {
 
 .content-blog-posts {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
 .box-blog-posts {
-    background-color: #FBFBFB;
+    width: 25%;
+    padding: 0 10px;
 }
 
 .image-blog-inset {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 195px;
+    background-color: #FBFBFB;
 }
 
 .container-for-posts {
@@ -963,20 +1002,24 @@ input[type="radio"].visually-hidden {
 .read-more-post {
     text-decoration: none;
     font-weight: 500;
+    width: 88px;
     font-size: 14px;
     color: #3D3D3D;
-    position: relative;
     transition: all 0.1s ease;
 }
 
-.read-more-post::after {
+.read-more-post span {
+    position: relative;
+}
+
+.read-more-post span::after {
     content: '';
     background-image: url('../image/blogs-arrow-right.svg');
     background-repeat: no-repeat;
     position: absolute;
     height: 8px;
     width: 12px;
-    right: 140px;
+    right: -20px;
     top: 25%;
 }
 
@@ -996,21 +1039,23 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
 .garden-care {
     display: flex;
+    flex-wrap: wrap;
     width: 65%;
-    margin: 0;
+    margin: 0 -25px;
     padding: 0;
-    gap: 32px;
 }
 
 .card-garden-care {
     list-style: none;
     text-decoration: none;
-    width: 33, 333%;
+    width: 33.333%;
+    padding: 0 25px;
 }
 
 .image-garden-care {
@@ -1118,7 +1163,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-logo {
-    padding-right: 98px;
+    padding-right: 68px;
 }
 
 .contact-item {
@@ -1154,20 +1199,21 @@ input[type="radio"].visually-hidden {
     padding: 33px 0 27px;
     border-bottom: 1px solid rgba(70, 163, 88, 0.2);
     margin-bottom: 50px;
+    gap: 30px;
 }
 
 .guide {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     list-style: none;
     width: 65%;
-    padding: 0;
+    gap: 30px;
+    padding-right: 150px;
 
 }
 
 .guide-sections {
     display: flex;
-    padding-right: 153px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -1194,7 +1240,6 @@ input[type="radio"].visually-hidden {
 
 .block-pay-and-media {
     width: 35%;
-    padding: 0 33px;
 }
 
 .links-media h2 {
@@ -1223,7 +1268,7 @@ input[type="radio"].visually-hidden {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.icon-media{
+.icon-media {
     color: #46A358;
     fill-opacity: 0.6;
 }
@@ -1245,3 +1290,426 @@ input[type="radio"].visually-hidden {
 }
 
 
+@media (max-width: 991px) {
+    .btn-sort-by {
+        padding-left: 0;
+    }
+
+    .guide {
+        padding-right: 76px;
+    }
+
+    .welcome-text {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        justify-content: unset;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .navbar-menu {
+        display: none;
+        background-color: #A5A5A5;
+        position: fixed;
+        left: -15px;
+        top: 79px;
+        right: -15px;
+        padding: 20px;
+        padding-bottom: 0;
+        height: calc(100vh - 80px);
+        overflow: auto;
+        z-index: 1000;
+    }
+
+    .navbar-menu li {
+        padding-bottom: 20px;
+    }
+
+    .navbar-menu-btn {
+        display: block;
+        order: 1;
+    }
+
+    .btn-container {
+        margin-left: auto;
+    }
+
+    .btn-login {
+        margin-right: 20px;
+    }
+
+    .welcome-text h2 {
+        font-size: 12px;
+    }
+
+    .welcome-text h1 {
+        font-size: 50px;
+        line-height: 51px;
+    }
+
+    .welcome-text p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .goods-item {
+        width: 50%;
+        padding: 0 10px 15px;
+    }
+
+    .goods-item-pic {
+        height: 280px;
+    }
+
+    .goods-item-inset p {
+        font-size: 15px;
+    }
+
+    .goods-item-inset h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .goods-item-inset .sale {
+        font-size: 15px;
+    }
+
+    .pagination {
+        margin: 20px 0;
+    }
+
+    .pagination a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .content-selection {
+        padding: 11px 21px 0 11px;
+    }
+
+    .list-categories li {
+        font-size: 12px;
+        padding-bottom: 13px;
+    }
+
+    .list-categories span {
+        display: none;
+    }
+
+    .block-size-of-plants .count {
+        display: none;
+    }
+
+    .headline-categories {
+        font-size: 13px;
+    }
+
+    .list-categories {
+        padding: 15px 0 15px 10px;
+    }
+
+    .container-price {
+        padding: 15px 0;
+    }
+
+    .avarage-price {
+        font-size: 10px;
+    }
+
+    .block-size-of-plants ul {
+        padding: 14px 0
+    }
+
+    .filters {
+        padding-bottom: 10px;
+    }
+
+    .btn-filters {
+        font-size: 12px;
+        line-height: 12px;
+        font-family: inherit;
+    }
+
+    .start {
+        padding-right: 10px;
+    }
+
+    .block-size-of-plants ul li {
+        padding-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .btn-sort-by p {
+        font-size: 12px;
+        line-height: 12px;
+        padding-right: 5px;
+        font-weight: 500;
+    }
+
+    .section-trands-plants {
+        margin-bottom: 30px;
+        gap: 5px;
+    }
+
+    .container-trands {
+        padding: 20px 0;
+    }
+
+    .headline-trands {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .text-trands {
+        line-height: 20px;
+        font-size: 10px;
+    }
+
+    .btn-find-more {
+        padding: 5px 42px 5px 10px;
+    }
+
+    .headline-blog-posts {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .box-blog-posts {
+        width: 50%;
+    }
+
+    .read-more-post::after {
+        right: 110px;
+    }
+
+    .section-newsletters {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .garden-care {
+        width: unset;
+    }
+
+    .card-garden-care h4 {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .card-garden-care p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .newsletter-wrapper {
+        gap: 30px;
+    }
+
+    .join-newsletters {
+        width: unset;
+        padding: 15px 0 30px 60px;
+    }
+
+    .join-newsletters p,
+    .parag-content,
+    .parag-month,
+    .text-blog-posts {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .guide {
+        width: 100%;
+        gap: 0;
+        padding: 0 50px;
+    }
+
+    .guide-sections a {
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .block-pay-and-media {
+        width: unset;
+        padding: 0 50%;
+    }
+
+    .links-media h2,
+    .pay-accept h6,
+    .headline-guide,
+    .headline-post {
+        font-size: 15px;
+    }
+
+    .pay-accept {
+        margin: 0;
+    }
+}
+
+.container-for-media-links {
+    padding: 10px 0;
+}
+
+@media (max-width: 539px) {
+    .welcome-text {
+        padding: 30px 34px 50px 0;
+        max-width: 100%;
+    }
+
+    .welcome-figure,
+    .btn-login span,
+    .banner-sale {
+        display: none;
+    }
+
+    .container-for-selection {
+        width: unset;
+    }
+
+    .filters {
+        position: relative;
+    }
+
+    .content-selection {
+        display: none;
+        background-color: #ffffff;
+        position: fixed;
+        left: -15px;
+        top: 62px;
+        right: -15px;
+        padding: 20px 40px;
+        padding-bottom: 0;
+        height: calc(100vh - 80px);
+        overflow: auto;
+        z-index: 1000;
+        font-size: 120%;
+    }
+
+    .list-categories li {
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .avarage-price {
+        font-size: 15px;
+    }
+
+    .slider-range {
+        width: 322px;
+    }
+
+    .headline-categories {
+        font-size: 20px;
+    }
+
+    .checkbox-text {
+        font-size: 18px;
+    }
+
+    .block-size-of-plants {
+        padding-top: 15px;
+    }
+
+    .filtrs-menu-btn {
+        display: block;
+
+    }
+
+    .all-plants {
+        width: 100%;
+    }
+
+    .start {
+        display: none;
+    }
+
+    .section-trands-plants {
+        flex-wrap: wrap;
+    }
+
+    .section-navigation {
+        background: linear-gradient(90deg, #EDF6EF 0%, #a2deae 100%);
+        height: 159px;
+    }
+
+    .join-newsletters {
+        padding: 15px 0 30px 0;
+    }
+
+    .block-pay-and-media {
+        width: 100%;
+        padding: 0 25%;
+    }
+
+    .guide {
+        padding: 0 20px;
+    }
+
+    .newsletter-form input {
+        width: 220px;
+    }
+
+    @media (max-width: 399px) {
+        .navbar a {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 379px) {
+        .welcome-text h2 {
+            font-size: 12px;
+        }
+
+        .welcome-text h1 {
+            font-size: 40px;
+            line-height: 41px;
+        }
+
+        .welcome-text p {
+            font-size: 10px;
+            line-height: 14px;
+            margin-bottom: 30px;
+        }
+
+        .all-plants {
+            width: 80%;
+        }
+
+        .goods-item {
+            width: 100%;
+        }
+
+        .box-blog-posts {
+            width: 100%;
+        }
+
+        .card-garden-care {
+            width: 100%;
+        }
+
+        .newsletter-form input {
+            width: 144px;
+        }
+
+        .section-navigation {
+            height: 177px;
+        }
+
+        .guide {
+            flex-wrap: wrap;
+        }
+
+        .block-pay-and-media {
+            padding: 0 10%;
+        }
+    }
+}
