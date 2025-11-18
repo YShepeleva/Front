@@ -11,7 +11,7 @@
     font-family: 'Cera Pro';
     src: url('../font/CeraPro-Regular.woff2') format('woff2'),
         url('../font/CeraPro-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -20,7 +20,7 @@
     font-family: 'Cera Pro';
     src: url('../font/CeraPro-Bold.woff2') format('woff2'),
         url('../font/CeraPro-Bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -29,7 +29,7 @@
     font-family: 'Cera Pro';
     src: url('../font/CeraPro-Regular.woff2') format('woff2'),
         url('../font/CeraPro-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -1571,8 +1571,12 @@ input[type="radio"].visually-hidden {
         display: none;
     }
 
-    .container-for-selection {
-        width: unset;
+    .choose-plants{
+        display: block;
+    }
+
+    .all-plants{
+        width: 100%;
     }
 
     .filters {
@@ -1622,10 +1626,6 @@ input[type="radio"].visually-hidden {
     .filtrs-menu-btn {
         display: block;
 
-    }
-
-    .all-plants {
-        width: 100%;
     }
 
     .start {
@@ -1678,10 +1678,6 @@ input[type="radio"].visually-hidden {
             font-size: 10px;
             line-height: 14px;
             margin-bottom: 30px;
-        }
-
-        .all-plants {
-            width: 80%;
         }
 
         .goods-item {
